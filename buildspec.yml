@@ -1,0 +1,14 @@
+phases:
+  install:
+    commands:
+      - echo Installing Node Modules...
+      - npm install -g mocha
+      - npm install
+  post_build:
+    commands:
+      - echo Performing Test
+      - npm test
+      - zip -r app-api.zip .
+artifacts:
+  files:
+    - app-api.zip
