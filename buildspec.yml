@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - mkdir build-output
+      - cp -R ansible build-output
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build-output
