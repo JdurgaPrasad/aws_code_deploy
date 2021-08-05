@@ -2,7 +2,7 @@ phases:
   install:
     commands:
       - echo Performing zip
-      - zip -r app-api.zip .
+      - zip -r app-api.zip ./testfolder
 artifacts:
   files:
     - app-api.zip
