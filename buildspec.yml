@@ -1,5 +1,7 @@
+version: 0.1
+
 phases:
-  install:
+  post_build:
     commands:
       - echo Performing zip
       - zip -r app-api.zip ./testfolder
